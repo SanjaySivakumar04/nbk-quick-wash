@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us - NBK Quick Wash</title>
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo.webp">
+  <link rel="manifest" href="logo.webp">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  .contact-section {
+    background-image: url('assets/css/img/about_us/about_bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .carrd {
+    border-radius: 12px;
+  }
+  .contact_img:hover {
+    transform: scale(1.02);
+  }
+
+  @media screen and (max-width:992px) {
+    .map {
+      height: 400px;
+    }
+
+    .carrd {
+      border-radius: 0;
+    }
+  }
+</style>
+
+<body>
+  <!------------ Header ------------>
+  <header class="navbar navbar-expand-lg navbar-light bg-light px-0 py-1">
+    <!------------ Navigation Bar ------------>
+    <nav class="container-xl py-1">
+      <!-- Logo -->
+      <a class="navbar-brand fs-5 fw-semibold d-flex " href="index.html">
+        <img src="logo.webp" alt class="img-fluid col-1 logo">
+        <p class="ps-1 align-self-center my-2 mx-1 brand_name">NBK Quick
+          Wash</p>
+      </a>
+      <!-- Navbar toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fs-6"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <hr class="nav_line">
+        <!-- Nav -->
+        <div class="navbar-nav ms-lg-auto">
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="index.html">Home</a>
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="services.html">Services</a>
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="aboutUs.html">About
+            Us</a>
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6 active" href="contactUs.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contact_us">
+    <!-------- Section-1 hero Section -------->
+    <section>
+      <div class="contact-section d-flex flex-column align-items-center justify-content-center p-5">
+        <div class="p-lg-4 d-flex flex-column align-items-center">
+          <h1 class="contact-title ">Contact us</h1>
+          <div class="contact-line">
+            <img src="assets/css/img/about_us/Vector_line.webp" class="img-fluid col-lg-12 mx-auto" alt>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-------- Section-2 Form Section -------->
+    <div class="container form-section py-5">
+      <!-- Section Divider -->
+      <div class="row">
+
+        <div class="col-lg-6 col-10 contact_img mx-auto">
+          <img src="assets/css/img/contact_img.webp" alt="NBK-Quick-Wash" class="img-fluid ms-lg-5">
+        </div>
+
+        <div class="col-lg-6 col-12 px-lg-5 px-2 pt-lg-5 pt-2 mx-auto">
+
+          <form action class=" contact_form">
+            <!-- 1st row -->
+            <div class="d-flex flex-wrap py-lg-2 py-1 pt-lg-4 pt-1 py-lg-1 py-xl-2">
+              <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-2 py-xl-2">
+                <label for="firstName" class="fw-medium">First Name</label>
+                <input class="form-control border-0 border-bottom fs-6" id="firstName" type="text" placeholder="John"
+                  minlength="3" required>
+              </div>
+              <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-2 py-xl-2">
+                <label for="lastName" class="fw-medium">Last Name</label>
+                <input class="form-control border-0 border-bottom  fs-6" id="lastName" type="text" placeholder="Doe"
+                  minlength="3" required>
+              </div>
+            </div>
+            <!-- 2nd Row -->
+            <div class="d-flex flex-wrap py-lg-2 py-1 pb-lg-4 pb-1 py-lg-1 py-xl-2">
+              <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-3 py-xl-2">
+                <label for="email" class="fw-medium">Email</label>
+                <input id="email" class="form-control border-0 border-bottom fs-6" type="text" minlength="15"
+                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="demo@gmail.com" required>
+              </div>
+              <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-3 py-xl-2">
+                <label for="PhoneNumber" class="fw-medium">Phone Number</label>
+                <input class="form-control border-0 border-bottom fs-6" id="PhoneNumber" type="text" minlength="10"
+                  placeholder="+1012 3456 789" required>
+                <div id="error"></div>
+              </div>
+            </div>
+            <div class="d-flex flex-column py-lg-2 py-1">
+              <label for="validationTextarea" class="form-label fs-6 fw-medium">Message</label>
+              <textarea class="form-control-lg fs-6" id="validationTextarea" placeholder="Write your message.." required
+                minlength="6" rows="5" cols="10"></textarea>
+            </div>
+
+            <div class="d-flex justify-content-lg-end align-items-end pt-lg-5 pt-4 pb-0 send_btn">
+              <button type="submit" class="rounded-5 py-3 px-5">Send
+                Message</button>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-------- Section-3 Map Section -------->
+    <section>
+      <div class="p-lg-5 py-0 ">
+        <div class="carrd d-flex flex-lg-row flex-column p-lg-5 py-4 py-md-3 px-3 justify-content-between p-lg-2"
+          style="background: #5A0C83;">
+          <div class="col-lg-6 col-sm-11 col-12">
+            <div class="card-head py-2">
+              <h1 class="text-light display-5 fw-semibold">Contact
+                Information</h1>
+              <p class="lead px-1" style="color: #C9C9C9;">
+                Say something to start a live chat!
+              </p>
+            </div>
+
+            <div class="card-body py-2">
+
+              <div class="d-flex align-items-center gap-2 p-2 py-lg-3 py-1">
+                <i class="fa fa-phone text-light pe-2 fs-4"></i>
+                <a class="nav-link text-light fs-6" href="tel:+91 8220362015" style="letter-spacing: 1px;">+91
+                  8220362015</a>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 p-2 py-3">
+                <i class="fa fa-envelope text-light pe-2 fs-4"></i>
+                <a class="nav-link text-light fs-6" href="mailto:sales@nbkquickwash.com"
+                  style="letter-spacing: 1px;">sales@nbkquickwash.com</a>
+              </div>
+
+              <div class="d-flex align-items-start gap-2 p-2 py-3">
+                <i class="fa-solid fa-location-dot text-light pe-2 fs-4"></i>
+                <address class="nav-link text-light fs-6" style="letter-spacing: 1px;">
+                  NBK Quickwash Near Carton box Company,
+                  VGV Garden,Krishna Nagar, PN Road, Vavipalayam,
+                  Tirupur - 641603
+                </address>
+              </div>
+
+              <div class="d-flex flex-row align-items-center justify-content-start py-2 mt-lg-3 mt-1">
+                <a class="text-light p-2 pe-3 fs-5" href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="text-light py-2 px-3 fs-5" href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a class="text-light py-2 px-3 fs-5" href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="text-light py-2 px-3 fs-5" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="text-decoration-none col-lg-5 col-12 mx-auto map my-3 my-lg-0">
+            <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
+              <iframe style="height:100%;width:100%;border:0; border-radius: 12px;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=nbk+quick+wash&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Back to top button -->
+  <div class="back-to-top" onclick="scrollToTop()">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+  <!-- Back to top button -->
+  <!-- wp button -->
+  <div>
+    <a href="https://wa.me/8220362015" class="btn-whatsapp-pulse">
+      <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+    </a>
+
+  </div>
+  <!-- wp button -->
+  <!-------- section-8 Footer -------->
+  <footer class="bg-dark py-5">
+    <div class="container">
+      <div class="text-center text-white">
+
+        <div class="footer-container py-3">
+
+          <h5 class="fw-bold">NBK Quick Wash</h5>
+
+          <div class="ms-lg-auto row justify-content-center align-items-center mt-4 py-3">
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="index.html">Home</a>
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="services.html">Service</a>
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="aboutUs.html">About</a>
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="contactUs.html">Contact</a>
+          </div>
+          <p class="col-9 mx-auto fs-6">Lörem ipsum od ohet dilogi. Bell
+            trabel, samuligt, ohöbel utom
+            diska. Jinesade bel
+            när feras redorade i belogi. FAR paratyp i muvåning, och pesask
+            vyfisat. Viktiga poddradio har un mad och
+            inde.</p>
+        </div>
+
+        <div class="navbar-nav ms-lg-auto pt-3 mt-3">
+          <hr>
+          <div class="d-flex flex-row align-items-center justify-content-center">
+            <a class="nav-link py-2 px-4 fs-5" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="nav-link py-2 px-4 fs-5" href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a class="nav-link py-2 px-4 fs-5" href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="nav-link py-2 px-4 fs-5" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script defer src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script defer src="assets/js/script.js"></script>
+</body>
+
+</html>
